@@ -1,4 +1,3 @@
-// Is this working?
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -46,14 +45,122 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+	width: 100%;
+	border: 1px solid black;
 }
+th{
+	height: 60px;
+}
+
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	max-width: 100%;
+	border: 1px solid gray;
 }
 
 html, body {
     height: 100%;
+    font-family: 'Titillium Web', sans-serif;
 }
 
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+@mkborder:1px solid black;
+@bgc:aliceblue;
+.navstyle{
+	text-decoration: none;
+	color: grey;
+	padding: 25px;
+}
+.stylright(){
+	justify-content: right;
+	align-items:center;
+	display: flex;
+}
+
+.styleft(){
+	justify-content: left;
+	align-items:center;
+	display: flex;
+}
+body { /* centers the website */
+	width: 876px;
+	margin: 0 auto;
+}
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	font-size: 1.6rem;
+  }
+header{
+	
+		border-bottom: 1px solid black;
+		margin: 20px 0;
+		padding: 20px 0;
+		display: flex;
+		justify-content: space-between;
+		
+		@media( max-width: 515px ) {
+			  flex-direction: column;
+			  align-items: center;
+		} 
+
+	.nav{
+		.navstyle();
+		a{
+			
+			font-family: 'Concert One', cursive;
+		}
+	}
+}
+.mbody{
+	line-height: 2;
+	border:@bgc;
+	img{
+		justify-content: left;
+		width: 100%;
+	}
+	.features{
+		justify-content: left;
+		h2{
+			font-size: 15px;
+			font-family: 'Concert One', cursive;
+		}
+		p{
+			text-decoration: aqua;
+		}
+	}
+}
+.top-content{
+	border: @mkborder;
+	display: flex;
+	.about{
+		display: flex;
+		p{
+			text-decoration:rosybrown;
+		}
+	}
+}
+.table-content{
+	.navstyle();
+	background-color: antiquewhite;
+	.tablesservices{
+		.tablesservices{
+			display: flex;
+			
+		}
+	}
+
+}
+footer{
+	
+	border: @mkborder;
+}
