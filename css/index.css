@@ -126,7 +126,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  border: 1px solid black;
 }
 th {
   height: 60px;
@@ -181,12 +180,11 @@ header {
     align-items: center;
   }
 }
-header .nav {
-  text-decoration: none;
-  color: grey;
-  padding: 25px;
+header nav {
+  align-content: space-between;
 }
-header .nav a {
+header nav a {
+  text-decoration: none;
   font-family: 'Concert One', cursive;
 }
 .mbody {
@@ -208,7 +206,6 @@ header .nav a {
   text-decoration: aqua;
 }
 .top-content {
-  border: 1px solid black;
   display: flex;
 }
 .top-content .about {
